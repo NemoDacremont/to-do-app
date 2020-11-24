@@ -1,6 +1,6 @@
 # todo
 
 ## This project Goals:
-* nothing
-	* nothing but in nothing
-* **nothing but in bold**
+* none
+	* none but in none
+* **none but in bold**
