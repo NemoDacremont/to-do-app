@@ -34,11 +34,17 @@ $gray-5: #A9A9A9;
 $background-color: #FFF;
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+header {
+	h1 {
+		font-family: 'raleway', sans-serif;
+	}
 }
 
 nav {
