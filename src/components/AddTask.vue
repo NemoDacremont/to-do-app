@@ -22,6 +22,11 @@ export default defineComponent({
 	gap: 25px;
 	padding: 18px 0;
 
+	input {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
 	input[type=text] {
 		width: 80%;
 		padding: 20px 12px;
@@ -34,6 +39,20 @@ export default defineComponent({
 	}
 
 	input[type=submit] {
+		width: 15%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 0;
+		background-color: var(--blue);
+		border: 0;
+		border-radius: 12px;
+		font-weight: 600;
+		color: var(--white);
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
 </style>

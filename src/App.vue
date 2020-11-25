@@ -51,7 +51,7 @@ export default defineComponent({
 
 // Import Fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@600&display=swap');
 
 // Colors
 
@@ -62,6 +62,7 @@ export default defineComponent({
 	--gray-3: #828282;
 	--gray-4: #BDBDBD;
 	--gray-5: #A9A9A9;
+	--white: #FFF;
 	--background-color: #FFF;
 }
 
@@ -73,6 +74,10 @@ export default defineComponent({
 	box-sizing: border-box;
   font-family: 'montserrat', sans-serif;
   color: var(--dark-gray);
+}
+
+h1, a, p, label {
+	line-height: 1.2;
 }
 
 #app {
@@ -95,7 +100,6 @@ header {
 		font-weight: 700;
 		font-style: normal;
 		font-size: 36px;
-		line-height: 42px;
 		letter-spacing: -0.045em;
 
 		margin: 32px 0;
@@ -131,6 +135,7 @@ header {
 				width: 100%;
 				padding: 18px 0;
 				text-decoration: none;
+				font-weight: 600;
 			}
 		}
 	}
