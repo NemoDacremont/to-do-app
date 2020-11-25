@@ -55,13 +55,15 @@ export default defineComponent({
 
 // Colors
 
-$red: #EB5757;
-$blue: #2F80ED;
-$dark-gray: #333333;
-$gray-3: #828282;
-$gray-4: #BDBDBD;
-$gray-5: #A9A9A9;
-$background-color: #FFF;
+:root {
+	--red: #EB5757;
+	--blue: #2F80ED;
+	--dark-gray: #333333;
+	--gray-3: #828282;
+	--gray-4: #BDBDBD;
+	--gray-5: #A9A9A9;
+	--background-color: #FFF;
+}
 
 *,
 *::before,
@@ -69,22 +71,25 @@ $background-color: #FFF;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+  color: var(--dark-gray);
 }
 
 #app {
-  font-family: 'montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: $dark-gray;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-header {
+header, main {
 	width: 609px;
+}
+
+header {
 	h1 {
 		font-family: 'raleway', sans-serif;
 		font-weight: 700;
@@ -99,11 +104,11 @@ header {
 
 .nav {
 	position: relative;
-	border-bottom: 1px solid $gray-4;
+	border-bottom: 1px solid var(--gray-4);
 
 	a {
 		font-weight: bold;
-		color: $dark-gray;
+		color: var(--dark-gray);
 		overflow: hidden;
 		position: relative;
 	}
@@ -133,7 +138,7 @@ header {
 	.route-overlay {
 		height: 0;
 		width: 16.5%;
-		border-top: 4px solid $blue;
+		border-top: 4px solid var(--blue);
 		border-radius: 4px 4px 0 0;
 		position: absolute;
 		top: calc(100% - 4px);
