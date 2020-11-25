@@ -15,6 +15,7 @@
 import AddTask from '@/components/AddTask';
 import Task from '@/components/task';
 import { defineComponent } from 'vue'
+
 export default defineComponent({
 	name: 'Active',
 	components: {
@@ -23,3 +24,7 @@ export default defineComponent({
 	}
 })
 </script>
+
+<style lang="scss" scoped>
+
+</style>
